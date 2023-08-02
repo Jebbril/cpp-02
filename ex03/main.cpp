@@ -6,23 +6,22 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 17:26:41 by orakib            #+#    #+#             */
-/*   Updated: 2023/08/01 19:32:38 by orakib           ###   ########.fr       */
+/*   Updated: 2023/08/02 15:10:51 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Fixed.hpp"
-#include <cmath>
+#include "Point.hpp"
+
 
 int main( void ) {
-	Fixed a;
-	Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
-	
-	std::cout << a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << a << std::endl;
-	std::cout << a++ << std::endl;
-	std::cout << a << std::endl;
-	std::cout << b << std::endl;
-	std::cout << Fixed::max( a, b ) << std::endl;
+	Point	a(1,1);
+	Point	b(3,3);
+	Point	c(1,4);
+	Point	p(2,2);
+
+	if (bsp(a,b,c,p))
+		std::cout << "The point is inside the triangle." << std::endl;
+	else
+		std::cout << "The point is outside the triangle." << std::endl;
 	return 0;
 }
