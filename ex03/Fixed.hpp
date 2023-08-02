@@ -6,7 +6,7 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 17:26:56 by orakib            #+#    #+#             */
-/*   Updated: 2023/08/01 18:35:17 by orakib           ###   ########.fr       */
+/*   Updated: 2023/08/02 16:34:14 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ class	Fixed {
 		Fixed	&operator--(int);
 
 		// public member functions
-		int		getRawBits(void);
+		int		getRawBits(void) const;
 		void	setRawBits(const int raw);
 		float	toFloat(void) const;
 		int		toInt(void) const;

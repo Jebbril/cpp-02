@@ -6,7 +6,7 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 17:26:49 by orakib            #+#    #+#             */
-/*   Updated: 2023/08/02 15:12:03 by orakib           ###   ########.fr       */
+/*   Updated: 2023/08/02 16:34:14 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,7 +161,7 @@ Fixed	&Fixed::operator--(int) {
 
 // public member functions
 
-int	Fixed::getRawBits(void) {
+int	Fixed::getRawBits(void) const {
 	return (this->value);
 }
 
